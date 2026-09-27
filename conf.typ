@@ -13,7 +13,7 @@
   #text(size: 0.7em, fill: black.lighten(30%))[#extra]
 ]
 
-#let important(content, padding: 8pt) = [
+#let important(content, padding: 8pt) = block(breakable: false)[
   #set par(spacing: 0pt)
   #set text(size: 9.5pt)
   #pad(left: padding, bottom: 4pt)[#text(
@@ -24,11 +24,11 @@
   #rect(fill: light, inset: 0pt, width: 100%)[#pad(
     left: padding,
     right: padding,
-    top: 4pt,
+    top: padding,
     bottom: 10pt,
   )[#content]]
 ]
-#let definition(word, content, padding: 8pt) = [
+#let definition(word, content, padding: 8pt) = block(breakable: false)[
   #set par(spacing: 0pt)
   #set text(size: 9.5pt)
   #pad(left: padding, right: padding, bottom: 4pt)[#text(
@@ -36,14 +36,14 @@
     weight: "medium",
   )[#upper[Definition:]]]
   #line(length: 100%, stroke: 0.5pt)
-  #pad(left: padding, bottom: 4pt, top: 4pt)[#text(
+  #pad(left: padding, bottom: padding, top: padding)[#text(
     font: "Serifa Std",
     weight: "bold",
   )[#word]]
   #rect(fill: light, inset: 0pt, width: 100%)[#pad(
     left: padding,
     right: padding,
-    top: 4pt,
+    top: padding,
     bottom: 10pt,
   )[#content]]
 ]
@@ -81,8 +81,12 @@
   )
 
   show list: set list(
-    marker: (scale(x: 200%, y: 200%)[#text(fill: cyan)[•]]),
+    marker: place(dx: -4pt, dy: -2pt)[#scale(x: 200%, y: 200%)[#text(
+      fill: cyan,
+      size: 1em,
+    )[•]]],
     body-indent: 6pt,
+    indent: -10pt,
     spacing: 10pt,
   )
 
