@@ -65,7 +65,8 @@
       #v(1em)
       #pad(
         right: -32pt,
-      )[#text(fill: cyan)[*AP #sep SAT #sep Collage Board*] #h(1fr) A Year in Review #sep #counter(page).display("1")]
+      )[#text(fill: cyan, weight: "bold")[AP #sep SAT #sep College Board]
+        #h(1fr) A Year in Review #sep #counter(page).display("1")]
       #v(1em)
       #set text(7pt)
       #pad(
@@ -73,7 +74,15 @@
       )[#h(1fr)© 2026 Collage Board]
     ],
   )
-  set text(font: "Myriad Pro", top-edge: "cap-height", size: 11pt)
+
+  set text(
+    font: "Myriad Pro",
+    top-edge: "cap-height",
+    size: 11pt,
+    fill: black.lighten(20%),
+  )
+  show strong: set text(weight: "light", fill: black)
+
   set par(spacing: 1em, leading: 5pt)
   set grid(
     columns: (1fr, 1.5in),

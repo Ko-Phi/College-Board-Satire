@@ -28,7 +28,7 @@
   #[
     #set text(size: 6em, weight: "medium")
     #set par(leading: 0.3em)
-    Collage \ Board
+    College \ Board
   ]
   #v(3em)
   #rect(inset: 10pt)[
@@ -37,7 +37,7 @@
   ]
 ]
 
-= Collage Board
+= We, The College Board
 
 #grid(
   [
@@ -63,16 +63,19 @@
     #v(0.5em)
 
     #important()[The College Board offers a variety of goods and services, everything any prospective student, parent, and/or education could and will ever need!
-      Despite the attempts made by the government and competing organizations to rid us of our supposed “*monopoly*,” the College Board's grip around the nation’s education system remains as tight as ever—as it should be.
-      You will take the *SAT* and all the *AP* classes we deem necessary.]
+      Despite the *attempts made by the government and competing organizations to rid us of our supposed “monopoly,”* the College Board's grip around the nation’s education system remains as tight as ever—as it should be.
+      *You _will_ take the SAT and all the AP classes we deem necessary.*]
 
     #v(0.5em)
 
     - #bold(extra: "(We insist you take it, really)")[The SAT]
     #[The *SAT* is the College Board’s standardized college admissions test.
-      By utilizing intentionally misleading questions and convoluted passages,
+      By utilizing *intentionally misleading questions and convoluted passages*,
       it gauges your proficiency in Mathematics and English and assigns you a number.
-      Be wary, as many colleges, including any private and state institutions, will ask you of this result (we’ve relentlessly campaigned for this to be so!). If you don't meet these arbitrary criteria, we’re afraid you’ll be unable to attend. As a means of rectifying these shortcomings, one can always retake the *SAT*—though at an additional cost, of course.]
+      Be wary, as many colleges, including any private and state institutions, will ask you of this result
+      (we’ve relentlessly campaigned for this to be so!). If you don't meet these arbitrary criteria,
+      we’re afraid you’ll be unable to attend. As a means of rectifying these shortcomings,
+      *one can always retake the SAT—though at an additional cost, of course.*]
 
     #v(1em)
 
@@ -81,37 +84,42 @@
         )[Advanced Placement]
         #[*The Advanced Placement (AP)* program serves as a means of preparing students for college-level courses.
           Depending on how well one does in our curriculum and the convoluted standardized test,
-          a student may even receive college credit, allowing them to skip the totally necessary
-          introductory courses colleges make you attend. If you think about it, it's really quite the deal.
+          a student may even receive college credit, allowing them to *skip the totally necessary
+          introductory courses colleges make you attend.* If you think about it, it's really quite the deal.
           You can skip out a whole semester of college, ignoring all the added fees. This is assuming the college
-          accepts the score you receive (or the particular class), though, so make sure to pay that
-          *\$100* and study up on our affiliated study materials.]
+          accepts the score you receive (or the particular class), though, so *make sure to pay that
+          \$100 and study up on our affiliated study materials!*]
       ]
   ],
   grid(
     columns: 1fr, row-gutter: 16pt,
     definition("Non-Profit", padding: 6pt)[
-      #lorem(25)
-      made tons of money
+      College Board is legally considered a non-profit under code *501(c)(3)*. *This keeps the millions
+      we generate from standardized tests tax exempt*.
+      More specifically, the College Board does not face tax on *federal income or to activities tied
+      our "educational mission."* In exchange for non-profit status, College Board is *forsakes the right to lobby*.
+      This is a restriction we've chosen to ignore as *we cannot afford to let legal matters hinder our operations.*
     ],
     definition("Monopoly", padding: 6pt)[
-      #lorem(25)
-      made tons of money
+      Many claims have been made about us, the College Board, and our *complete market dominance*.
+      Though many are quick to call out this supposed monopoly, we at College Board reassure you that all our successes
+      are the *result of the effort's we've made to promote and foster education*.
+      Now, would a actual monopoly really be so considerate? *It's safe to that we're at least one of the good ones.*
     ],
     important(padding: 6pt)[
-      #lorem(25)
-      made tons of money
+      Many might've heard that the SAT was *almost brought of out circulation*, with critiques
+      deeming the test *inaccurate when gauging the academic proficiency and college readiness of students.*
+      As valid as these concerns may be, College Board *retains to power to enforce these tests any how.*
     ],
   ),
 )
 
-#pagebreak()
+#v(3em)
 
 = The 2026--2027 School Year
 
 #grid(
   [
-    #v(1em)
     == SAT And PSAT
     #lorem(150)
     == AP Tests
@@ -123,8 +131,6 @@
     ap,
   ),
 )
-
-#pagebreak()
 
 = Future Changes
 
