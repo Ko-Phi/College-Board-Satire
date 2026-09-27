@@ -14,36 +14,36 @@
   #v(-0.4em)
 ]
 
-#let important(content) = [
+#let important(content, padding: 8pt) = [
   #set par(spacing: 0pt)
   #set text(size: 9.5pt)
-  #pad(left: 10pt, right: 8pt, bottom: 4pt)[#text(
+  #pad(left: padding, bottom: 4pt)[#text(
     size: 0.75em,
     weight: "medium",
   )[#upper[Important:]]]
   #line(length: 100%)
   #rect(fill: light, inset: 0pt, width: 100%)[#pad(
-    left: 10pt,
-    right: 10pt,
+    left: padding,
+    right: padding,
     top: 4pt,
     bottom: 10pt,
   )[#content]]
 ]
-#let definition(word, content) = [
+#let definition(word, content, padding: 8pt) = [
   #set par(spacing: 0pt)
   #set text(size: 9.5pt)
-  #pad(left: 10pt, right: 8pt, bottom: 4pt)[#text(
+  #pad(left: padding, right: padding, bottom: 4pt)[#text(
     size: 0.75em,
     weight: "medium",
   )[#upper[Definition:]]]
   #line(length: 100%, stroke: 0.5pt)
-  #pad(left: 10pt, right: 8pt, bottom: 4pt, top: 4pt)[#text(
+  #pad(left: padding, bottom: 4pt, top: 4pt)[#text(
     font: "Serifa Std",
     weight: "bold",
   )[#word]]
   #rect(fill: light, inset: 0pt, width: 100%)[#pad(
-    left: 10pt,
-    right: 10pt,
+    left: padding,
+    right: padding,
     top: 4pt,
     bottom: 10pt,
   )[#content]]
@@ -59,7 +59,7 @@
     columns: (1fr, 18pt),
     [], rect(width: 100%, height: 100%, stroke: 0pt, fill: pat),
   ),
-  footer: context [
+  footer: context place(bottom + right, dy: -20pt)[
     #let sep = [#h(4pt) | #h(4pt)]
     #set text(8pt)
     #v(1em)
@@ -128,6 +128,11 @@
     #text(weight: "medium")[Effective] \ #text(weight: "black")[Fall 202\*]
   ]
 ]
+
+#page(
+  background: rect()[#upper()[This page is intentionally left blank]],
+  footer: [],
+)[]
 
 #page(margin: 1.5in)[= Create Performance Task
 
@@ -209,7 +214,8 @@
     - Instructions for output (tactile, audible, visual, or textual) based on input and program functionality
   ],
   grid(
-    columns: 1fr, row-gutter: 16pt, definition("List")[
+    columns: 1fr, row-gutter: 16pt,
+    definition("List", padding: 6pt)[
       A *list* is an ordered
       sequence of elements.
       The use of lists allows
@@ -221,7 +227,7 @@
       arrays, depending on the
       programming language.
     ],
-    definition("Collection Type")[
+    definition("Collection Type", padding: 6pt)[
       A collection type is a
       type that aggregates
       elements in a single
@@ -229,7 +235,7 @@
       examples include lists,
       databases, and sets.
     ],
-    important()[
+    important(padding: 6pt)[
       With text-based program
       code, you can use the
       print command to save
