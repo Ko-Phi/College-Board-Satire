@@ -35,9 +35,14 @@
     #set text(size: 2em)
     #text(weight: "medium")[Effective] \ #text(weight: "black")[Fall 2026]
   ]
+
+  #v(3em)
+
+  #outline(title: none, depth: 2)
 ]
 
-= We, The College Board
+
+= The College Board
 
 #grid(
   [
@@ -62,9 +67,13 @@
 
     #v(0.5em)
 
-    #important()[The College Board offers a variety of goods and services, everything any prospective student, parent, and/or education could and will ever need!
-      Despite the *attempts made by the government and competing organizations to rid us of our supposed “monopoly,”* the College Board's grip around the nation’s education system remains as tight as ever—as it should be.
-      *You _will_ take the SAT and all the AP classes we deem necessary.*]
+    #important()[
+      The College Board offers a variety of goods and services, everything any prospective student,
+      parent, and/or education could and will ever need!
+      Despite the *attempts made by the government and competing organizations to rid us of our supposed “monopoly,”*
+      the College Board's grip around the nation’s education system remains as tight as ever—as it should be.
+      *You _will_ take the SAT and all the AP classes we deem necessary.*
+    ]
 
     #v(0.5em)
 
@@ -116,23 +125,124 @@
 
 #v(3em)
 
+#pagebreak()
+
 = The 2026--2027 School Year
 
 #grid(
+  columns: (1fr, 32pt),
   [
-    == SAT And PSAT
-    #lorem(150)
-    == AP Tests
-    #lorem(250)],
-  grid(
-    columns: 1,
-    row-gutter: 16pt,
-    sat,
-    ap,
-  ),
-)
+    With the pleasantries out of the way, we at the College Board would like to
+    provide an *overview of the 2025–2026 school year.* This should serve as an
+    adequate refresher on the many accomplishments and developments of the past year and
+    give background to the many changes to come.
 
-= Future Changes
+    == Advanced Placement
+    2025–2026 proved quite a *successful school year for the Advanced Placement (AP) program.*
+    In terms of academic performance and AP test scores, we saw a *rise across the board,*
+    with many classes surpassing historical highs.
+
+    Whether this is the *result of lowered
+    testing standards or actual academic improvement*, we, the College Board, choose not to tell.
+    Just know that, with broader participation, come some *necessary curriculum alterations.*
+    It wouldn’t be right if the average were to drop just because more people chose to buy
+    into our programs now, would it?
+
+    Anyhow, here’s a list of the *relevant highs and lows coming from last year’s AP exams compared to that of the year prior.*
+
+    #import "data.typ": falls, rises
+
+    #let change(d) = if d > 0 {
+      text(fill: green.darken(40%))[+#d%]
+    } else if d < 0 {
+      text(fill: red.darken(40%))[#sym.minus#calc.abs(d)%]
+    } else [0]
+
+    #let mapRow(row) = (
+      row
+        .map(r => (
+          text(font: "Serifa Std")[#r.at(0)],
+          [#r.at(1)%],
+          [#r.at(2)%],
+          [#r.at(3)%],
+          [#r.at(4)%],
+          [#r.at(5)%],
+          [*#r.at(6)%*],
+          [#r.at(7)%],
+          change(r.at(6) - r.at(7)),
+        ))
+        .flatten()
+    )
+
+    #set table(
+      columns: (2fr, 0.6fr, 0.6fr, 0.6fr, 0.6fr, 0.6fr, 0.9fr, 0.9fr, 0.8fr),
+      align: (
+        left,
+        center + horizon,
+        center + horizon,
+        center + horizon,
+        center + horizon,
+        center + horizon,
+        center + horizon,
+        center + horizon,
+        center + horizon,
+      ),
+      inset: (x: 5pt, y: 6pt),
+      stroke: (x: none, y: 0.4pt + black.lighten(60%)),
+      fill: (_, y) => if y == 0 { luma(225) } else if calc.even(y) {
+        light
+      },
+    )
+
+    #let head = table.header(
+      text(font: "Serifa Std")[*Exam*],
+      [*5*],
+      [*4*],
+      [*3*],
+      [*2*],
+      [*1*],
+      [*3+ 2026*],
+      [*3+ 2025*],
+      [*Change*],
+    )
+
+    === Rises / Highs
+    #table(
+      head,
+      ..mapRow(rises),
+    )
+
+
+    === Falls / Lows
+    #table(
+      head,
+      ..mapRow(falls),
+    )
+
+    == The SAT
+    SAT scores have, let's just say, struggled. As many are aware, *SAT scores have been
+    on the decline since the pandemic.* Now, what does this say about the state of education?
+    Have we, as the College Board, *failed in our mission of preparing our youth for adulthood?*
+    Let’s not be too hasty now. While standardized test scores here haven’t seen much improvement,
+    one must also look towards test count.
+
+    For you see, after some heavy lobbying and exceptional self-promotion, the *number of students
+    taking the SAT and attending Advanced Placement (AP) classes has increased significantly over the years.*
+    This past year has been no different. So then, so what if scores remain relatively fixed? As long as students
+    continue paying for our overpriced courses and tests, *the College Board remains the sole authority
+    in American education.* Only once we thoroughly establish this control can we focus on improvement.
+
+    After all, our *non-profit requires heaps of capital to remain in business.* Going purely by finances,
+    this past year has actually been the most successful for the College Board. With this extra money,
+    we continue focusing on *improving our curriculum and expanding our control.*
+
+    So think not of our shortcomings and look ahead to what's to come. There’s surely more to be done by and for us.
+    *Big things are coming.*
+  ],
+)
+#pagebreak()
+
+= Changes to Come
 
 #grid(
   [

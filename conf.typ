@@ -110,6 +110,11 @@
     #set text(font: "Serifa Std", weight: "bold", fill: cyan, size: 1em)
     #scale(y: 110%)[#it]
   ]
+  show heading.where(level: 3): it => [
+    #set block(below: 0.75em, above: 1.5em)
+    #set text(font: "Serifa Std", weight: "bold", fill: black, size: 1em)
+    #scale(y: 110%)[#it]
+  ]
 
   doc
 }
