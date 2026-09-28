@@ -13,13 +13,13 @@
   #text(size: 0.7em, fill: black.lighten(30%))[#extra]
 ]
 
-#let important(content, padding: 8pt) = block(breakable: false)[
+#let note(content, padding: 8pt) = block(breakable: false)[
   #set par(spacing: 0pt)
   #set text(size: 9.5pt)
   #pad(left: padding, bottom: 4pt)[#text(
     size: 0.75em,
     weight: "medium",
-  )[#upper[Important:]]]
+  )[#upper[Note:]]]
   #line(length: 100%)
   #rect(fill: light, inset: 0pt, width: 100%)[#pad(
     left: padding,

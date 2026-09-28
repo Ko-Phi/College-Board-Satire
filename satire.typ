@@ -1,5 +1,5 @@
 // Shove some importants and bullet lists in there as well
-#import "conf.typ": blue, bold, conf, cyan, definition, important, light
+#import "conf.typ": blue, bold, conf, cyan, definition, light, note
 
 #show: conf
 
@@ -35,10 +35,6 @@
     #set text(size: 2em)
     #text(weight: "medium")[Effective] \ #text(weight: "black")[Fall 2026]
   ]
-
-  #v(3em)
-
-  #outline(title: none, depth: 2)
 ]
 
 
@@ -53,7 +49,7 @@
 
     #v(0.5em)
 
-    #important()[For any inquiries, or, god forbid, any critiques, you may give us a call at _866-630-9305_.
+    #note()[For any inquiries, or, god forbid, any critiques, you may give us a call at _866-630-9305_.
       We’ll do everything in our unyielding power to set things straight.]
 
     #v(0.5em)
@@ -67,7 +63,7 @@
 
     #v(0.5em)
 
-    #important()[
+    #note()[
       The College Board offers a variety of goods and services, everything any prospective student,
       parent, and/or education could and will ever need!
       Despite the *attempts made by the government and competing organizations to rid us of our supposed “monopoly,”*
@@ -115,7 +111,7 @@
       are the *result of the effort's we've made to promote and foster education*.
       Now, would a actual monopoly really be so considerate? *It's safe to that we're at least one of the good ones.*
     ],
-    important(padding: 6pt)[
+    note(padding: 6pt)[
       Many might've heard that the SAT was *almost brought of out circulation*, with critiques
       deeming the test *inaccurate when gauging the academic proficiency and college readiness of students.*
       As valid as these concerns may be, College Board *retains to power to enforce these tests any how.*
@@ -132,10 +128,10 @@
 #grid(
   columns: (1fr, 32pt),
   [
-    With the pleasantries out of the way, we at the College Board would like to
-    provide an *overview of the 2025–2026 school year.* This should serve as an
-    adequate refresher on the many accomplishments and developments of the past year and
-    give background to the many changes to come.
+    #note()[With the pleasantries out of the way, we at the College Board would like to
+      provide an *overview of the 2025–2026 school year.* This should serve as an
+      adequate refresher on the many accomplishments and developments of the past year and
+      give background to the many changes to come.]
 
     == Advanced Placement
     2025–2026 proved quite a *successful school year for the Advanced Placement (AP) program.*
@@ -148,7 +144,7 @@
     It wouldn’t be right if the average were to drop just because more people chose to buy
     into our programs now, would it?
 
-    Anyhow, here’s a list of the *relevant highs and lows coming from last year’s AP exams compared to that of the year prior.*
+    #note()[Anyhow, here’s a list of the *relevant highs and lows coming from last year’s AP exams compared to that of the year prior.*]
 
     #import "data.typ": falls, rises
 
@@ -206,38 +202,39 @@
       [*Change*],
     )
 
-    === Rises / Highs
-    #table(
-      head,
-      ..mapRow(rises),
-    )
+    - === Rises / Highs
+      #table(
+        head,
+        ..mapRow(rises),
+      )
 
 
-    === Falls / Lows
-    #table(
-      head,
-      ..mapRow(falls),
-    )
+    - === Falls / Lows
+      #table(
+        head,
+        ..mapRow(falls),
+      )
 
-    == The SAT
-    SAT scores have, let's just say, struggled. As many are aware, *SAT scores have been
-    on the decline since the pandemic.* Now, what does this say about the state of education?
-    Have we, as the College Board, *failed in our mission of preparing our youth for adulthood?*
-    Let’s not be too hasty now. While standardized test scores here haven’t seen much improvement,
-    one must also look towards test count.
+      == The SAT
+      SAT scores have, let's just say, struggled. As many are aware, *SAT scores have been
+      on the decline since the pandemic.* Now, what does this say about the state of education?
+      Have we, as the College Board, *failed in our mission of preparing our youth for adulthood?*
+      Let’s not be too hasty now. While standardized test scores here haven’t seen much improvement,
+      one must also look towards test count.
 
-    For you see, after some heavy lobbying and exceptional self-promotion, the *number of students
-    taking the SAT and attending Advanced Placement (AP) classes has increased significantly over the years.*
-    This past year has been no different. So then, so what if scores remain relatively fixed? As long as students
-    continue paying for our overpriced courses and tests, *the College Board remains the sole authority
-    in American education.* Only once we thoroughly establish this control can we focus on improvement.
+      For you see, after some heavy lobbying and exceptional self-promotion, the *number of students
+      taking the SAT and attending Advanced Placement (AP) classes has increased significantly over the years.*
 
-    After all, our *non-profit requires heaps of capital to remain in business.* Going purely by finances,
-    this past year has actually been the most successful for the College Board. With this extra money,
-    we continue focusing on *improving our curriculum and expanding our control.*
+      This past year has been no different. So then, so what if scores remain relatively fixed? As long as students
+      continue paying for our overpriced courses and tests, *the College Board remains the sole authority
+      in American education.* Only once we thoroughly establish this control can we focus on improvement.
 
-    So think not of our shortcomings and look ahead to what's to come. There’s surely more to be done by and for us.
-    *Big things are coming.*
+      #note()[Our *non-profit requires heaps of capital to remain in business.* Going purely by finances,
+        this past year has actually been the most successful for the College Board. With this extra money,
+        we continue focusing on *improving our curriculum and expanding our control.*]
+
+      So think not of our shortcomings and look ahead to what's to come. There’s surely more to be done by and for us.
+      *Big things are coming.*
   ],
 )
 #pagebreak()
