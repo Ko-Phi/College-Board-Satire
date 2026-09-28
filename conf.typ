@@ -16,6 +16,7 @@
 #let note(content, padding: 8pt) = block(breakable: false)[
   #set par(spacing: 0pt)
   #set text(size: 9.5pt)
+  #v(0.5em)
   #pad(left: padding, bottom: 4pt)[#text(
     size: 0.75em,
     weight: "medium",
@@ -27,6 +28,7 @@
     top: padding,
     bottom: 10pt,
   )[#content]]
+  #v(0.5em)
 ]
 #let definition(word, content, padding: 8pt) = block(breakable: false)[
   #set par(spacing: 0pt)
