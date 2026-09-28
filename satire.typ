@@ -128,8 +128,10 @@
 #grid(
   columns: (1fr, 32pt),
   [
-    #note()[With the pleasantries out of the way, we at the College Board would like to
-      provide an *overview of the 2025–2026 school year.* This should serve as an
+    With the pleasantries out of the way, we at the College Board would like to
+    provide an *overview of the 2025–2026 school year.*
+
+    #note()[This should serve as an
       adequate refresher on the many accomplishments and developments of the past year and
       give background to the many changes to come.]
 
@@ -242,19 +244,97 @@
 = Changes to Come
 
 #grid(
-  [
-    #v(1em)
-    == New AP Classes
-    #lorem(100)
-    == Price Alterations
-    #lorem(100)
-    == Financial Support
-    #lorem(100)
-  ],
-  grid(
-    columns: 1,
-    row-gutter: 16pt,
-    definition("Education")[#lorem(50)],
-    definition("Loan")[#lorem(50)],
-  ),
-)
+  columns: (1fr, 32pt),
+)[*The Advanced Placement (AP) program* has proven to be the College Board’s most valuable export.
+  A large portion of the money our non-profit organization makes is derived from the *distribution of
+  standardized tests and curriculum resources (e.g., affiliated textbooks and endorsements).*
+
+  To ensure the continued prosperity of the College Board and education as a whole, we’ve *continually updated,
+  added to, and reorganized our AP curricula over the years.* This guarantees that all classroom material
+  is relevant and in line with our current agendas.
+
+  This year will prove no different, as we at the College Board *introduce a new line of AP courses alongside
+  noteworthy updates to existing ones.*
+
+  #set table(
+    columns: (0.3fr, 1fr),
+    inset: (x: 5pt, y: 8pt),
+    stroke: (x: none, y: 0.4pt + black.lighten(60%)),
+    fill: (_, y) => if y == 0 { luma(225) } else if calc.even(y) {
+      light
+    },
+  )
+  #let head = table.header(
+    [=== Class],
+    [=== Description],
+  )
+
+  == Additions
+  #table(
+    head,
+
+    text(font: "Serifa Std")[AP Business with Personal Finance:],
+    [This class will serve as an *introductory look into the business world.*
+      Here, you’ll cover everything from entrepreneurship to marketing and finance.
+      By strengthening your financial literacy, you’ll be able to *follow in our footsteps and make a truckload of money.*],
+
+    text(font: "Serifa Std")[AP Networking:],
+    [With this course, we’ll try to prove that networking is, in fact, *a learnable skill and not something that depends
+      on your social class.* Along the way, you’ll learn all the relevant buzzwords and the ins and outs of business speech,
+      hopefully aiding in your post-college years. *Success, of course, isn’t at all guaranteed, so don’t be too disappointed.*],
+
+    text(font: "Serifa Std")[AP Cybersecurity:],
+    [As everything becomes more and more digitized, it becomes *all but necessary to understand the digital threats
+      you may encounter on a daily basis.* By spotting real-world threats to and completing hands-on exercises,
+      you should hopefully become *competent enough to keep your personal information safe.* That is, safe from anyone but us.],
+
+    text(font: "Serifa Std")[AP Artificial Intelligence:],
+    [*To capitalize on the recent AI craze,* the College Board will now be offering the AP Artificial Intelligence course.
+      Though *we haven’t exactly figured out an organized curriculum for this course, nor planned out any testable metrics,*
+      we are sure that this course will make us a ton of money.],
+  )
+
+  == Changes
+  #table(
+    head,
+
+    text(font: "Serifa Std")[AP Precalculus:],
+    [
+      Due to unsatisfactory enrollment counts and low college credit acceptance rates,
+      this class will have to be dropped to make room for more profitable ventures.
+    ],
+
+    text(font: "Serifa Std")[AP Calculus BC:],
+    [Due to the extremely high pass rates, this course’s curriculum will be updated to cover
+      even higher-level material. This should hopefully curb pass rates and improve the reputation of Calculus AB.],
+  )
+
+  #note()[Alongside the *changes to the curriculum come alterations to the price of our goods and services.*
+    As the College Board continues to grow, sucking more and more space in the education industry,
+    the *money needed to keep ourselves afloat only increases.*]
+
+  While we certainly have some money saved for later *(only about \$1.6 billion),* this money won’t last forever.
+  This is why we, as the College Board, are making the *executive decision to raise the price of the SAT
+  and all AP classes once more.*
+
+  The base price of the *AP test will be raised from \$99 to \$119, and the SAT from \$68 to \$80.*
+  These changes will be made *starting next school year,* so make sure to enroll in class while prices are low.
+
+  As an organization so keen on spreading education, we *cannot ignore the financially disadvantaged among us.*
+  This is why, in response to increased prices, the College Board will be *directing financial aid efforts
+  to those unfortunate students.*
+
+  Starting this school year, the College Board will begin *offering loans to low-income students to help get
+  them off their feet.* This allows students to take the classes and the tests they wish to take without the
+  immediate financial burden. Rather, it’ll loom in the background, *following them into adulthood and gradually
+  building interest until they can finally pay them off in far more than full.* This way,
+  the College Board remains profitable, as it should be.
+
+  With all the developments and changes we’ve outlined above, we, the College Board,
+  once again would like to *thank you for your continued support.* By continuing to give us money,
+  you *not only help build towards your future, but also that of others.*
+
+  #note[Now, if you, for whatever reason, find the methods and principles we covered in this paper *unsatisfactory or immoral*,
+    *we’re afraid nothing can be done*. Whether you like it or not, we, as the College Board,
+    have already made the executive decision to put these changes into place. *There is nothing that can be done to stop us now.*]]
+
