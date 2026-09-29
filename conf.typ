@@ -6,10 +6,10 @@
   #set text(
     fill: cyan,
     weight: "bold",
-    font: "Myriad Pro",
+    font: "Serifa Std",
   )
   #set par(spacing: 0em)
-  #upper[#content]
+  #content
   #text(size: 0.7em, fill: black.lighten(30%))[#extra]
 ]
 
@@ -57,10 +57,17 @@
   set page(
     paper: "us-letter",
     margin: 1in,
-    background: grid(
-      columns: (1fr, 18pt),
-      [], rect(width: 100%, height: 100%, stroke: 0pt, fill: pat),
-    ),
+    background: context if calc.odd(here().page()) {
+      grid(
+        columns: (1fr, 18pt),
+        [], rect(width: 100%, height: 100%, stroke: 0pt, fill: pat),
+      )
+    } else {
+      grid(
+        columns: (18pt, 1fr),
+        rect(width: 100%, height: 100%, stroke: 0pt, fill: pat), [],
+      )
+    },
     footer: context place(bottom + right, dy: -20pt)[
       #let sep = [#h(4pt) | #h(4pt)]
       #set text(8pt)
@@ -73,7 +80,7 @@
       #set text(7pt)
       #pad(
         right: -32pt,
-      )[#h(1fr)© 2026 Collage Board]
+      )[#h(1fr)© 2026 College Board]
     ],
   )
 

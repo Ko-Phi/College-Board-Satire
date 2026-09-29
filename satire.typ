@@ -3,13 +3,6 @@
 
 #show: conf
 
-#let sat = definition("The SAT", padding: 6pt)[
-  #lorem(35) tried best to make necessary, determine future
-]
-#let ap = definition("Advanced Placement", padding: 6pt)[
-  #lorem(35) essentially required, expensive, stress
-]
-
 #align(left)[
   #set text(font: "Serifa Std", top-edge: "cap-height")
   #set page(
@@ -31,12 +24,20 @@
     College \ Board
   ]
   #v(3em)
-  #rect(inset: 10pt)[
+  #rect(inset: 10pt, stroke: white + 1pt)[
     #set text(size: 2em)
     #text(weight: "medium")[Effective] \ #text(weight: "black")[Fall 2026]
   ]
 ]
 
+#page(
+  background: rect(inset: 10pt, text(size: 1.5em, (
+    upper[This page is intentionally left blank to waste paper.]
+  ))),
+  footer: [],
+)[]
+
+#counter(page).update(1)
 
 = The College Board
 
@@ -47,12 +48,8 @@
       We’ve come a long way since 1900, with our reach extending far past the United States and earning international recognition.
       Nevertheless, we keep to our American roots, with headquarters based in *NYC, NY* and *Reston, VA*.]
 
-    #v(0.5em)
-
     #note()[For any inquiries, or, forbid, any critiques, you may give us a call at _866-630-9305_.
       We’ll do everything in our unyielding power to set things straight.]
-
-    #v(0.5em)
 
     #[Despite our status as a *non-profit organization*, we have acquired extensive authority over the nation’s educational industry.
       This includes the *SAT*, which we’ve made all much necessary to enroll in a decent college, and the *Advanced Placement (AP)* program, which serves our primary money maker.
@@ -83,7 +80,7 @@
     #v(1em)
 
     - #block(breakable: false)[#bold(
-          extra: "(Yes, they really need to be that expensive)",
+          extra: "(Quite the great deal if you ask us!)",
         )[Advanced Placement]
         #[*The Advanced Placement (AP)* program serves as a means of preparing students for college-level courses.
           Depending on how well one does in our curriculum and the convoluted standardized test,
@@ -91,7 +88,7 @@
           introductory courses colleges make you attend.* If you think about it, it's really quite the deal.
           You can skip out a whole semester of college, ignoring all the added fees. This is assuming the college
           accepts the score you receive (or the particular class), though, so *make sure to pay that
-          \$100 and study up on our affiliated textbooks and materials!*]
+          \$100 and study up on our affiliated textbooks and materials.*]
       ]
   ],
   grid(
@@ -116,8 +113,6 @@
     ],
   ),
 )
-
-#v(3em)
 
 #pagebreak()
 
@@ -274,25 +269,25 @@
     text(font: "Serifa Std")[Business with Personal Finance:],
     [This class will serve as an *introductory look into the business world.*
       Here, you’ll cover everything from entrepreneurship to marketing and finance.
-      By strengthening your financial literacy, you’ll be able to *follow in our footsteps and make a truckload of money.*],
+      By strengthening your financial literacy and throwing away your morals, you’ll be able to *follow in our footsteps.*],
 
     text(font: "Serifa Std")[Networking:],
-    [With this course, we’ll try to prove that networking is, in fact, *a learnable skill and not something that depends
-      on your social class.* Along the way, you’ll learn all the relevant buzzwords and the ins and outs of business speech,
-      hopefully aiding in your post-college years. *Success, of course, isn’t at all guaranteed, so don’t be too disappointed.*],
+    [With this course, we’ll try to prove that networking is, in fact, *a learnable skill* and not something that depends
+      on your social class. Along the way, you’ll learn all the relevant buzzwords and the ins and outs of business speech,
+      hopefully aiding in your post-college years. *Success, of course, isn’t at all guaranteed,* so don’t be too disappointed.],
 
     text(font: "Serifa Std")[Cybersecurity:],
-    [As everything becomes more and more digitized, it becomes *all but necessary to understand the digital threats
+    [As everything becomes more and more digitized, it becomes all but necessary to *understand the digital threats
       you may encounter on a daily basis.* By spotting real-world threats and completing hands-on exercises,
       you should hopefully become *competent enough to keep your personal information safe.* That is, safe from anyone but us.],
 
     text(font: "Serifa Std")[Artificial Intelligence:],
-    [*To capitalize on the recent AI craze,* the College Board will now be offering the AP Artificial Intelligence course.
+    [To capitalize on the recent AI craze, the College Board will now be offering the AP Artificial Intelligence course.
       Though *we haven’t exactly figured out an organized curriculum, nor planned out any testable metrics,*
       we are sure that this course will be very successful.],
   )
 
-  == Changes
+  == Alterations
   #table(
     head,
 
@@ -307,9 +302,12 @@
       even *higher-level material.* This should hopefully curb pass rates and improve the reputation of Calculus AB.],
   )
 
+  == Pricing and Services
   Alongside the *changes to the curriculum come alterations to the price of our goods and services.*
   As the College Board continues to grow, taking up more and more space in the education industry,
   the *money needed to keep ourselves afloat only increases.*
+
+  #note()[The College Board would once again like to remind you that we are, in fact, not a monopoly.]
 
   While we certainly have some money saved for later *(only about \$1.6 billion),* this money won’t last forever.
   This is why we, as the College Board, are making the *executive decision to raise the price of the SAT
@@ -318,6 +316,7 @@
   #note()[The base price of the *AP test will be raised from \$99 to \$119, and the SAT from \$68 to \$80.*
     These changes will be made *starting next school year,* so make sure to enroll in class while prices are low.]
 
+  == Financial Aid
   As an organization so keen on spreading education, we *cannot ignore the financially disadvantaged among us.*
   This is why, in response to increased prices, the College Board will be *directing financial aid efforts
   to those unfortunate students.*
@@ -332,7 +331,32 @@
   once again would like to *thank you for your continued support.* By continuing to give us money,
   you *not only help build towards your future, but also that of others.*
 
-  #note[Now, if you, for whatever reason, find the methods and principles we covered in this paper *unsatisfactory or immoral*,
-    *we’re afraid nothing can be done*. Whether you like it or not, we, as the College Board,
-    have already made the executive decision to put these changes into place. *There is nothing that can be done to stop us now.*]]
+  #note()[You can find more information about our new financial aid opportunities
+    and program at _ https://apstudents.collegeboard.org/about-financial-aid _]
+]
 
+#pagebreak()
+
+#grid(
+  columns: (1fr, 32pt),
+)[
+  = A Fitting Conclusion
+
+  With all the developments and changes we’ve outlined above, we, the College Board,
+  once again would like to thank you for your loyalty. Recent budget cuts and rising distrust have
+  contributed to a weakened education system. *Your continued support has allowed us to fill this power vacuum
+  and establish our authority over the entire industry.*
+
+  #note()[The College Board would once again like to remind you that we are, in fact, not a monopoly.]
+
+  *Remember, the College Board has and will always have your best interest in mind.*
+  By supporting us, you not only help build towards your future, but also that of others.
+  We continue doing our best during these trying times, whether it be providing education opportunities
+  or establishing increased market control.
+
+  This have been the College Board. May you be in our favor, for this year and next---*forever and aways.*
+
+  #note[If you, for whatever reason, find the methods and principles we covered in this paper unsatisfactory or immoral,
+    *we’re afraid nothing can be done*. Whether you like it or not, we, as the College Board,
+    have already made the executive decision. *There is nothing that can be done to stop us now.*]
+]

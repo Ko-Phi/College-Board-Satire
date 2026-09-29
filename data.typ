@@ -9,9 +9,9 @@
 )
 
 #let falls = (
-  ([Music Theory], 18, 17, 24, 26, 15, 59, 60),
   ([Chinese], 48, 19, 18, 6, 9, 85, 88),
-  ([Computer Science Principles], 10, 23, 30, 21, 16, 63, 63),
-  ([Italian], 19, 22, 28, 20, 11, 69, 73),
   ([Spanish Language], 21, 31, 31, 14, 3, 83, 85),
+  ([Italian], 19, 22, 28, 20, 11, 69, 73),
+  ([Computer Science Principles], 10, 23, 30, 21, 16, 63, 63),
+  ([Music Theory], 18, 17, 24, 26, 15, 59, 60),
 )
